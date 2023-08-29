@@ -33,6 +33,6 @@ if (primoNumero > secondoNumero) {
     
 } else{
     
-    risultatoDOC.innerHTML = `sono lo stesso numero '${primoNumero}'`;
+    risultatoDOC.innerHTML = `sono lo stesso numero '${primoNumero}'g`;
 
 }
