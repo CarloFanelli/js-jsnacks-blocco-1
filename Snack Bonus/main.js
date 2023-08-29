@@ -19,7 +19,7 @@ for (let i = 0; i < 6; i++) {
 
     const numeroUtente = Number(prompt('inserisci un numero ->'));
 
-    if (numeroUtente % 2 === 0) {
+    if (numeroUtente % 2 !== 0) {
 
         listaNumeri.push(numeroUtente);
         console.log(listaNumeri);
