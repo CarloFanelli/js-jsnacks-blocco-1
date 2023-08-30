@@ -32,3 +32,30 @@ if (primoNumero > secondoNumero) {
     risultatoDOC.innerHTML = `sono lo stesso numero '${primoNumero}'g`;
 
 }
+
+// con while
+
+let i = 0;
+
+const numeriUtente = [];
+
+while (i < 2){
+
+    const numeroUtente = Number(prompt('inserisci il numero'));
+    numeriUtente.push(numeroUtente);
+    const numeroConfronto = numeriUtente[i - 1];
+
+    console.log(numeroConfronto);
+
+    if (numeriUtente[i] > numeroConfronto) {
+        
+        console.log(`il numero ${numeriUtente[i]} è maggiore di ${numeroConfronto}`);
+
+    } else{
+
+        console.log(`il numero ${numeroConfronto} è maggiore di ${numeriUtente[ i ]}`);
+
+    }
+
+    i++;
+}
