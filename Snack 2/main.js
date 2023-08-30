@@ -41,3 +41,34 @@ if (primaParola.length > secondaParola.length) {
     parolaLungaDOC.insertAdjacentHTML('afterend','sono della stessa lunghezza')
     
 }
+
+// con while
+let i = 0;
+
+const paroleUser = [];
+
+while (i < 2){
+    const parolaUser = prompt('inserisci una parola');
+    paroleUser.push(parolaUser);
+    console.log(paroleUser);
+    
+     if (i != 0) {
+        
+        const parolaConfronto = paroleUser[i-1];
+
+        console.log(typeof(parolaConfronto));
+
+        console.log(parolaUser.length,parolaConfronto.length);
+
+        if ( parolaUser.length > parolaConfronto.length ) {
+        
+            console.log(`la parola ${parolaUser} è più lunga della parola ${parolaConfronto}`);
+
+    } else {
+        console.log(`la parola ${parolaConfronto} è più lunga della parola ${parolaUser}`);
+    }
+        
+    } 
+
+    i++;
+}
