@@ -45,16 +45,18 @@ while (i < 2){
     numeriUtente.push(numeroUtente);
     const numeroConfronto = numeriUtente[i - 1];
 
-    console.log(numeroConfronto);
-
-    if (numeriUtente[i] > numeroConfronto) {
+    if (i > 0) {
         
-        console.log(`il numero ${numeriUtente[i]} è maggiore di ${numeroConfronto}`);
-
-    } else{
-
-        console.log(`il numero ${numeroConfronto} è maggiore di ${numeriUtente[ i ]}`);
-
+        
+        if (numeriUtente[i] > numeroConfronto) {
+            
+            console.log(`il numero ${numeriUtente[i]} è maggiore di ${numeroConfronto}`);
+            
+        } else{
+            
+            console.log(`il numero ${numeroConfronto} è maggiore di ${numeriUtente[ i ]}`);
+            
+        }
     }
 
     i++;
